@@ -6,19 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.kelompok6.R
-import com.kelompok6.databinding.FragmentHistoryBinding
-import com.kelompok6.databinding.FragmentSplashScreenBinding
+import com.kelompok6.databinding.FragmentCartBinding
+import com.kelompok6.databinding.FragmentDetailBinding
 
-class SplashScreen : Fragment() {
-    lateinit var binding: FragmentSplashScreenBinding
-
+class Detail : Fragment() {
+    lateinit var binding: FragmentDetailBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        binding = FragmentSplashScreenBinding.inflate(inflater, container, false)
+        binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 }

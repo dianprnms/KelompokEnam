@@ -7,17 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import com.kelompok6.R
 import com.kelompok6.databinding.FragmentHistoryBinding
-import com.kelompok6.databinding.FragmentSplashScreenBinding
+import com.kelompok6.databinding.FragmentHomeBinding
 
-class SplashScreen : Fragment() {
-    lateinit var binding: FragmentSplashScreenBinding
+
+class Home : Fragment() {
+    lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSplashScreenBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 

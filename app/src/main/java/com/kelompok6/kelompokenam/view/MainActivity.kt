@@ -1,4 +1,4 @@
-package com.kelompok6.view
+package com.kelompok6.kelompokenam.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

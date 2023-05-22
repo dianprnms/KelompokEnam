@@ -17,6 +17,7 @@ class Profile : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-        return binding.root    }
+        return binding.root
+    }
 
 }

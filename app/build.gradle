@@ -83,5 +83,6 @@ dependencies {
     //noinspection GradleDependency
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
-
+    //foto
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 }

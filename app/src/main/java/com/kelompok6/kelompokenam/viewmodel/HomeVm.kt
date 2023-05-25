@@ -22,7 +22,6 @@ class HomeVm : ViewModel(){
             override fun onResponse(
                 call: Call<List<slider_dataItem>>,
                 response: Response<List<slider_dataItem>>
-
             ) {
                 if (response.isSuccessful){
                     liveDataSlider.postValue(response.body())
@@ -46,15 +45,18 @@ class HomeVm : ViewModel(){
 
             ) {
                 if (response.isSuccessful){
-                    val newsresponse = response.body()
-                    liveDataNews.postValue(newsresponse!!)
+                    liveDataNews.postValue(response.body())
+//                    val newsresponse = response.body()
+//                    liveDataNews.postValue(newsresponse!!)
                 }else{
-                    liveDataNews.value = emptyList()
+                    liveDataNews.postValue(emptyList())
+//                    liveDataNews.value = emptyList()
                 }
             }
 
             override fun onFailure(call: Call<List<news_update_dataItem>>, t: Throwable) {
-                liveDataNews.value = emptyList()
+                liveDataNews.postValue(emptyList())
+//                liveDataNews.value = emptyList()
             }
 
         })

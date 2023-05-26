@@ -22,9 +22,6 @@ class SplashScreen : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnToHome.setOnClickListener {
-            findNavController().navigate(R.id.action_splashScreen_to_home2)
 
-        }
     }
 }

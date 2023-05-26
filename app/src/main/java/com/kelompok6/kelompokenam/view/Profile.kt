@@ -28,18 +28,18 @@ class Profile : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.uploadFoto.setOnClickListener {
-            val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
-            startActivityForResult(gallery, pickImage)
-        }
+//        binding.uploadFoto.setOnClickListener {
+//            val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+//            startActivityForResult(gallery, pickImage)
+//        }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
-            imageUri = data?.data
-            binding.fotoProfil.setImageURI(imageUri)
-        }
-    }
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        super.onActivityResult(requestCode, resultCode, data)
+////        if (resultCode == AppCompatActivity.RESULT_OK && requestCode == pickImage) {
+////            imageUri = data?.data
+////            binding.fotoProfil.setImageURI(imageUri)
+////        }
+//    }
 
 }

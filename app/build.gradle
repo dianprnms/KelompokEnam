@@ -85,4 +85,5 @@ dependencies {
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     //foto
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
 }

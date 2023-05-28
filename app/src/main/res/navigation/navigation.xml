@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_home2_to_profile"
             app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_home2_to_detailNews"
+            app:destination="@id/detailNews" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -85,4 +88,9 @@
         android:name="com.kelompok6.kelompokenam.view.History"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/detailNews"
+        android:name="com.kelompok6.kelompokenam.view.DetailNews"
+        android:label="fragment_detail_news"
+        tools:layout="@layout/fragment_detail_news" />
 </navigation>
